@@ -53,8 +53,13 @@
 }
 .malumotlarWiew {
   /* margin-top: 50px; */
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 10px;
   width: 80vw;
-  height: 100vh;
+  height: auto;
   border: 3px solid red;
   margin: 50px auto;
 }
