@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.container div {
+  width: 500px;
+}
+
+.headerContainer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+#ulcham {
+  font-size: 25px;
+  opacity: 0.7;
+}
+
+.leftmenu {
+  display: flex;
+  gap: 15px;
+}
+
+.youtub {
+  font-weight: 800;
+  color: red;
+  font-size: 25px;
+}
+
+.line {
+  margin: 10px 0;
+  width: 80%;
+  height: 3px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.205);
+}
+
+.right-account {
+  display: flex;
+  gap: 20px;
+}
+.malumotlarWiew {
+  margin-top: 50px;
+  width: 80vw;
+  height: 100vh;
+  border: 3px solid red;
+  margin: 0 auto;
+}
