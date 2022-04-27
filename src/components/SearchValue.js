@@ -9,9 +9,10 @@ class SearchValue extends React.Component {
     };
   }
 
-  onSubmitBolganda(e) {
+  onSubmitBolganda = (e) => {
     e.preventDefault();
-  }
+    this.props.valueniOlibKel(this.state.SearchValueniOl);
+  };
 
   valueniOlTez = (event) => {
     this.setState({ SearchValueniOl: event.target.value });

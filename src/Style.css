@@ -52,9 +52,9 @@
   gap: 20px;
 }
 .malumotlarWiew {
-  margin-top: 50px;
+  /* margin-top: 50px; */
   width: 80vw;
   height: 100vh;
   border: 3px solid red;
-  margin: 0 auto;
+  margin: 50px auto;
 }

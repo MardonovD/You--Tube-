@@ -17,9 +17,7 @@ class Header extends React.Component {
             <i className="youtube icon ulcham" id="ulcham"></i>
             <b className="youtub">YOU TUBE</b>
           </div>
-          <div>
-            <SearchValue />
-          </div>
+          <div>{/* <SearchValue /> */}</div>
           <div className="right-account" id="ulcham">
             <i className="qrcode icon"></i>
             <i className="table icon" id="ulcham"></i>
