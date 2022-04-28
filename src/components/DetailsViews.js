@@ -1,89 +1,58 @@
 import React from "react";
-import ReactDOM from "react-dom";
 
+import "../Style.css";
 class DetailsViews extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
 
-  // olibKeldi = () => {
-  //   console.log(this.props.ekrangaChiqarish);
-  //   this.props.ekrangaChiqarish.data?.items.map((val) => {
-  //     console.log(val);
-  //   });
-  // };
-
   render() {
     return this.props.ekrangaChiqarish.data?.items.map((val) => {
       console.log(val);
       return (
-        <div className="cardContainer">
-          <div className="ui card">
-            <div className="image">
-              <img src={val.snippet.thumbnails.default.url} />
+        <div className="container2">
+          <div className="imageLeft">
+            <img src={val.snippet.thumbnails.medium.url} />
+          </div>
+          <div className="content">
+            <a className="header">{val.snippet.title}</a>
+            <div className="meta">
+              <span className="date">{val.snippet.channelTitle}</span>
             </div>
-            <div className="content">
-              <a className="header">{val.snippet.title}</a>
-              <div className="meta">
-                <span className="date">Joined in 2013</span>
-              </div>
-              <div className="description">
-                Kristy is an art director living in New York.
-              </div>
-            </div>
-            <div className="extra content">
-              <a>
-                <i className="user icon"></i>
-                22 Friends
-              </a>
-            </div>
+            <div className="description">{val.snippet.publishTime}</div>
+            <div>{val.snippet.description}</div>
           </div>
         </div>
+
+        // <div className="cardContainer">
+        //   <div className="ui card">
+        //     <div className="image">
+        //       <img src={val.snippet.thumbnails.default.url} />
+        //     </div>
+        //     <div className="content">
+        //       <a className="header">{val.snippet.title}</a>
+        //       <div className="meta">
+        //         <span className="date">{val.snippet.channelTitle}</span>
+        //       </div>
+        //       <div className="description">{val.snippet.publishTime}</div>
+        //     </div>
+        //     <div className="extra content">
+        //       <div>
+        //         {/* <i className="user icon"></i> */}
+        //         <img
+        //           className="imageAccount"
+        //           src={val.snippet.thumbnails.default.url}
+        //           alt="rasm bor"
+        //         />
+        //         22 Friends
+        //       </div>
+        //     </div>
+        //   </div>
+        // </div>
       );
     });
   }
 }
 
 export default DetailsViews;
-// return (
-// <div className="cardContainer">
-//   <div className="ui card">
-//     <div className="image">
-//       <img src="/images/avatar2/large/kristy.png" />
-//     </div>
-//     <div className="content">
-//       <a className="header">Kristy</a>
-//       <div className="meta">
-//         <span className="date">Joined in 2013</span>
-//       </div>
-//       <div className="description">
-//         Kristy is an art director living in New York.
-//       </div>
-//     </div>
-//     <div className="extra content">
-//       <a>
-//         <i className="user icon"></i>
-//         22 Friends
-//       </a>
-//     </div>
-//   </div>
-// </div>
-// );
-
-// class DetailsViews extends React.Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {};
-//   }
-
-//   render() {
-//     return (
-//       <div>
-
-//       </div>
-//     );
-//   }
-// }
-
-// export default DetailsViews;

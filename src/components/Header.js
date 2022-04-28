@@ -1,12 +1,16 @@
 import React from "react";
-import ReactDOM from "react-dom";
+
 import SearchValue from "./SearchValue.js";
+
 import "../Style.css";
 class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
+  tema = () => {
+    console.log(12);
+  };
 
   render() {
     return (
@@ -19,6 +23,7 @@ class Header extends React.Component {
           </div>
           <div>{/* <SearchValue /> */}</div>
           <div className="right-account" id="ulcham">
+            <i className="adjust icon" id="tema" onClick={this.tema}></i>
             <i className="qrcode icon"></i>
             <i className="table icon" id="ulcham"></i>
             <i className="bell slash icon " id="ulcham"></i>
